@@ -1,15 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Uc from './Uc.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to SoftBear.dev. Under Construction
-        </p>
+          <Uc />
       </header>
     </div>
   );
