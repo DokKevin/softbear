@@ -4,21 +4,21 @@
     font-size: 3vmin;
     position: absolute;
     top: 0vh;
-    left: 1.25vw;
+    left: 2vw;
     background-color: white;
     padding-left: 2vmin;
     padding-right: 2vmin;
     line-height: normal;
 }
 
-a{
+#home{
     text-decoration: none;
 }
 
-a:visited {
+#home:visited {
     text-decoration: none;
 }
 
-a:hover{
+#home:hover{
     text-decoration: underline;
 }
