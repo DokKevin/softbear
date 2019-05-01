@@ -10,7 +10,9 @@ class HomeLink extends React.Component {
     render() {
         return (
             <div class="HLWrap">
-                <a href="https://www.softbear.dev" style={{color: this.props.color}}>SoftBear</a>
+                <a id="home" href="https://www.softbear.dev" style={{color: this.props.color}}>
+                    SoftBear
+                </a>
             </div>
         )
     }
