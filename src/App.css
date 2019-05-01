@@ -8,7 +8,7 @@ a {
 }
 
 .App-header {
-  height: calc(100vh - 3vmin);
+  min-height: calc(100vh - 3vmin);
   width: calc(100vw - 3vmin);
   margin: 1vmin;
   border: .50vmin solid #be315b;
@@ -18,9 +18,9 @@ a {
 
 #intro {
     color: #be315b;
+    background-color: white;
     /* border: .25vmin solid #be315b; */
     float: left;
-    height: 100%;
     width: calc((100vw - 3vmin) / 2);
     margin: 0;
     padding: 0;
@@ -62,7 +62,6 @@ a {
 .homeLinkWrapper {
     /* border: .25vmin solid #be315b; */
     float: right;
-    height: calc((100vh - 3vmin) / 2);
     width: calc((100vw - 3vmin) / 2);
     display: inline-block;
     margin: 0;
@@ -74,8 +73,6 @@ a {
 
 .homeLink {
     background-color: #be315b;
-    border-left: .5vmin solid #be315b;
-    border-right: .5vmin solid #be315b;
     color: white;
     height: 100%;
     width: calc(100% - .5vmin);
@@ -88,4 +85,44 @@ a {
 .homeLink:hover{
     background-color: white;
     color: #be315b;
+}
+
+@media (min-width: 1200px){
+    #intro {
+        height: calc(100vh - 4vmin);
+    }
+
+    .homeLinkWrapper {
+        height: calc((100vh - 3vmin) / 2);
+    }
+
+    .homeLink {
+        border-left: .5vmin solid #be315b;
+        border-right: .5vmin solid #be315b;
+    }
+}
+
+@media (max-width: 1200px){
+    .App-header{
+        overflow-x: scroll;
+        background-color: #be315b;
+    }
+
+    #intro {
+        width: 100%;
+    }
+
+    #intro h3 {
+        margin-bottom: 15vmin;
+    }
+
+    .homeLinkWrapper {
+        width: 100%;
+    }
+
+    .homeLink {
+        height: 50vmin;
+        border-top: .5vmin solid #be315b;
+        width: 100%;
+    }
 }
