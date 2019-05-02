@@ -1,6 +1,8 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 import HomeLink from './HomeLink.js';
+import Langs from './Langs.js';
 
 function App() {
   return (
@@ -16,14 +18,18 @@ function App() {
             <h3>I do these things:</h3>
           </div>
           <div class="homeLinkWrapper">
-            <a href="" class="homeLink">Learn Languages</a>
+            <div href="" class="homeLink" onClick={renderLangs}>Learn Languages</div>
           </div>
           <div class="homeLinkWrapper">
-            <a href="" class="homeLink">Develop Software</a>
+            <div href="" class="homeLink">Develop Software</div>
           </div>
       </header>
     </div>
   );
+
+  function renderLangs() {
+      ReactDOM.render(<Langs />, document.getElementById('root'));
+  }
 }
 
 export default App;

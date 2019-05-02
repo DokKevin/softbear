@@ -85,6 +85,7 @@ a {
 .homeLink:hover{
     background-color: white;
     color: #be315b;
+    cursor: pointer;
 }
 
 @media (min-width: 1200px){
