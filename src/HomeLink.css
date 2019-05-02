@@ -11,14 +11,7 @@
     line-height: normal;
 }
 
-#home{
-    text-decoration: none;
-}
-
-#home:visited {
-    text-decoration: none;
-}
-
 #home:hover{
     text-decoration: underline;
+    cursor: pointer;
 }

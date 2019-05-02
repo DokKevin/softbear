@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 import './HomeLink.css';
 
 class HomeLink extends React.Component {
@@ -10,11 +12,15 @@ class HomeLink extends React.Component {
     render() {
         return (
             <div class="HLWrap">
-                <a id="home" href="https://www.softbear.dev" style={{color: this.props.color}}>
+                <div id="home" href="https://www.softbear.dev" style={{color: this.props.color}} onClick={this.renderHome}>
                     SoftBear
-                </a>
+                </div>
             </div>
         )
+    }
+
+    renderHome(){
+        ReactDOM.render(<App />, document.getElementById('root'));
     }
 }
 

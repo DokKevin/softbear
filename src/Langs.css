@@ -1,0 +1,99 @@
+/* Green for Passed Exams: #5CFF37 */
+
+.langPageWrapper {
+  min-height: calc(100vh - 3vmin);
+  width: calc(100vw - 3vmin);
+  margin: 1vmin;
+  border: .50vmin solid #707070;
+  padding: 0;
+  overflow: hidden;
+}
+
+#synop {
+    color: #707070;
+    margin: 10vw;
+    text-align: center;
+    font-size: 3.5vmin;
+}
+
+#tableWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10vmin;
+    margin-right: 10vmin;
+}
+
+.langWrapper {
+    text-align: center;
+    width: 100%;
+    color: #707070;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 1vmin;
+}
+
+.langName {
+    padding: 2.5vmin;
+    display: inline-block;
+    width: 15%;
+    background-color: grey;
+    border: .50vmin solid grey;
+    color: black;
+}
+
+.examWrapper {
+    display: inline-block;
+    width: 75%;
+}
+
+#firstLang {
+    width: 100%;
+}
+
+.passed {
+    padding-top: 2.5vmin;
+    padding-bottom: 2.5vmin;
+    background-color: #B1F7A6;
+    border-top: .50vmin solid #B1F7A6;
+    border-bottom: .50vmin solid #B1F7A6;
+    display: inline-block;
+}
+
+.notPassed {
+    padding-top: 2.5vmin;
+    padding-bottom: 2.5vmin;
+    border-top: .50vmin solid grey;
+    border-bottom: .50vmin solid grey;
+    height: 100%;
+    display: inline-block;
+}
+
+.notStudying {
+    border-right: .50vmin solid grey;
+}
+
+.jlpt {
+    width: calc(100% / 6);
+}
+
+.hsk {
+    width: calc(100% / 7);
+}
+
+.gz {
+    width: calc(100% / 7);
+}
+
+.notStudying.jlpt {
+    width: calc((100% / 6) - .5vmin)
+}
+
+.notStudying.hsk {
+    width: calc((100% / 7) - .5vmin);
+}
+
+.notStudying.gz {
+    width: calc((100% / 7) - .5vmin);
+}
