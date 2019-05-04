@@ -4,14 +4,21 @@
     font-size: 3vmin;
     position: absolute;
     top: 0vh;
-    left: 2vw;
+    left: 1.25vw;
     background-color: white;
     padding-left: 2vmin;
     padding-right: 2vmin;
     line-height: normal;
 }
 
-#home:hover{
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
