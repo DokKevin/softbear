@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import HomeLink from './HomeLink.js';
 import Langs from './Langs.js';
+import Soft from './Soft.js';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <div class="homeLinkWrapper">
             <div href="" class="homeLink" onClick={renderLangs}>Learn Languages</div>
           </div>
-          <div class="homeLinkWrapper">
+          <div class="homeLinkWrapper" onClick={renderSoft}>
             <div href="" class="homeLink">Develop Software</div>
           </div>
       </header>
@@ -29,6 +30,10 @@ function App() {
 
   function renderLangs() {
       ReactDOM.render(<Langs />, document.getElementById('root'));
+  }
+
+  function renderSoft() {
+      ReactDOM.render(<Soft />, document.getElementById('root'));
   }
 }
 
