@@ -1,3 +1,5 @@
+This is my personal homepage, the purpose of which is to introduce myself and my projects to the wider world. It's located at https://www.softbear.dev It's always under development, to see if there are new updates, navigate to https://beta.softbear.dev
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
