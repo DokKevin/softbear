@@ -67,7 +67,17 @@ class BigList extends React.Component {
 
     render(){
         return (
-            <div>Test Big</div>
+            <div class="projectWrapper">
+                <div class="projectName">
+                    SoftBear
+                </div>
+                <div class="projectItemWrapper">
+                    <a href="https://github.com/DokKevin/softbear" target="_blank" class="projectItem github">GitHub</a>
+                    <a href="https://www.softbear.dev" target="_blank" class="projectItem link">Link</a>
+                    <div class="projectItem status inProgress">In Progress</div>
+                    <div class="projectItem desc">Website for introducing myself and my projects. Developed with ReactJS.</div>
+                </div>
+            </div>
         );
     }
 }
@@ -75,12 +85,26 @@ class BigList extends React.Component {
 class ChallList extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            name: this.props.name,
+            status: this.props.status,
+            github: this.props.github
+        }
     }
 
     render(){
         return (
-            <div>Test Challenge</div>
+            <div class="projectWrapper">
+                <div class="projectName">
+                    None
+                </div>
+                <div class="projectItemWrapper">
+                    <a class="projectItem github">No GitHub</a>
+                    <a class="projectItem link">No Link</a>
+                    <div class="projectItem status none">Not Started</div>
+                    <div class="projectItem desc">No Challenge Projects Yet</div>
+                </div>
+            </div>
         );
     }
 }
