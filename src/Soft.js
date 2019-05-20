@@ -8,8 +8,8 @@ class Soft extends React.Component {
         super(props);
         this.state = {
             bigColor: "#F5F5F5",
-            bigBackColor: "#37C0FF",
-            challColor: "#909090",
+            bigBackColor: "black",
+            challColor: "#646464",
             challBackColor: "#F5F5F5"
         }
     }
@@ -17,13 +17,13 @@ class Soft extends React.Component {
     render() {
         return (
             <div class="softPageWrapper">
-                <HomeLink color="#F5F5F5" backCol="#909090"/>
+                <HomeLink color="#F5F5F5" backCol="transparent"/>
                 <h1 id="softSynop">
                     I am an academically trained Software Engineer.
                     <br />
                     I like to spend time every week developing larger projects,
-                    and a day every week developing challenge projects with a
-                    one day deadline.
+                    and hope to start spending a day every week developing
+                    challenge projects with a one day deadline.
                 </h1>
                 <div class="projectsWrapper">
                     <div class="tabsWrapper">
@@ -41,8 +41,8 @@ class Soft extends React.Component {
     renderBigProjs = () => {
         this.setState({
             bigColor: "#F5F5F5",
-            bigBackColor: "#37C0FF",
-            challColor: "#909090",
+            bigBackColor: "black",
+            challColor: "#646464",
             challBackColor: "#F5F5F5"
         });
         ReactDOM.render(<BigList />, document.getElementById('projectList'));
@@ -50,10 +50,10 @@ class Soft extends React.Component {
 
     renderChallProjs = () => {
         this.setState({
-            bigColor: "#909090",
+            bigColor: "#646464",
             bigBackColor: "#F5F5F5",
             challColor: "#F5F5F5",
-            challBackColor: "#37C0FF"
+            challBackColor: "black"
         });
         ReactDOM.render(<ChallList />, document.getElementById('projectList'));
     }
@@ -77,6 +77,7 @@ class BigList extends React.Component {
                     <div class="projectItem status inProgress">In Progress</div>
                     <div class="projectItem desc">Website for introducing myself and my projects. Developed with ReactJS.</div>
                 </div>
+                <div class="projBuffer">Buff</div>
             </div>
         );
     }
@@ -94,16 +95,19 @@ class ChallList extends React.Component {
 
     render(){
         return (
-            <div class="projectWrapper">
-                <div class="projectName">
-                    None
+            <div class="listWrapper">
+                <div class="listItemWrapper">
+                    <div class="projectName">
+                        None
+                    </div>
+                    <div class="projectItemWrapper">
+                        <a class="projectItem github">No GitHub</a>
+                        <a class="projectItem link">No Link</a>
+                        <div class="projectItem status none">Not Started</div>
+                        <div class="projectItem desc">No Challenge Projects Yet</div>
+                    </div>
                 </div>
-                <div class="projectItemWrapper">
-                    <a class="projectItem github">No GitHub</a>
-                    <a class="projectItem link">No Link</a>
-                    <div class="projectItem status none">Not Started</div>
-                    <div class="projectItem desc">No Challenge Projects Yet</div>
-                </div>
+                <div class="projBuffer">Buff</div>
             </div>
         );
     }
