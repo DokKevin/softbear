@@ -67,17 +67,15 @@ class BigList extends React.Component {
 
     render(){
         return (
-            <div class="listWrapper">
-                <div class="listItemWrapper">
-                    <div class="projectName">
-                        SoftBear
-                    </div>
-                    <div class="projectItemWrapper">
-                        <a href="https://github.com/DokKevin/softbear" target="_blank" class="projectItem github isActive">GitHub</a>
-                        <a href="https://www.softbear.dev" target="_blank" class="projectItem link isActive">Link</a>
-                        <div class="projectItem status inProgress">In Progress</div>
-                        <div class="projectItem desc">Website for introducing myself and my projects. Developed with ReactJS.</div>
-                    </div>
+            <div class="projectWrapper">
+                <div class="projectName">
+                    SoftBear
+                </div>
+                <div class="projectItemWrapper">
+                    <a href="https://github.com/DokKevin/softbear" target="_blank" rel="noopener noreferrer" class="projectItem github">GitHub</a>
+                    <a href="https://www.softbear.dev" target="_blank" rel="noopener noreferrer" class="projectItem link">Link</a>
+                    <div class="projectItem status inProgress">In Progress</div>
+                    <div class="projectItem desc">Website for introducing myself and my projects. Developed with ReactJS.</div>
                 </div>
                 <div class="projBuffer">Buff</div>
             </div>
