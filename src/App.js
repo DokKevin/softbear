@@ -1,40 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import HomeLink from './HomeLink.js';
+import Home from './Home.js';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Langs from './Langs.js';
 import Soft from './Soft.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <HomeLink color="#be315b"/>
-          <div id="intro">
-            <div class="buffer">Buffer</div>
-            <h1>Hello there...</h1>
-            <div class="buffer">Buffer</div>
-            <h2>My name is Kevin.</h2>
-            <div class="buffer">Buffer</div>
-            <h3>I do these things:</h3>
-          </div>
-          <div class="homeLinkWrapper">
-            <div href="" class="homeLink" onClick={renderLangs}>Learn Languages</div>
-          </div>
-          <div class="homeLinkWrapper" onClick={renderSoft}>
-            <div href="" class="homeLink">Develop Software</div>
-          </div>
-      </header>
-    </div>
+      <Router>
+            <Route path="/" exact component={Home} />
+            <Route path="/langs/" component={Langs} />
+            <Route path="/soft/" component={Soft} />
+      </Router>
   );
-
-  function renderLangs() {
-      ReactDOM.render(<Langs />, document.getElementById('root'));
-  }
-
-  function renderSoft() {
-      ReactDOM.render(<Soft />, document.getElementById('root'));
-  }
 }
 
 export default App;
