@@ -21,7 +21,7 @@ class Home extends React.Component {
             return (
               <div className="App">
                 <header className="App-header">
-                    <HomeLink color="#be315b"/>
+                    <HomeLink color="white" backCol="#be315b"/>
                     <div id="intro">
                       <div class="buffer">Buffer</div>
                       <h1>Hello there...</h1>

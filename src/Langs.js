@@ -11,7 +11,7 @@ class Langs extends React.Component {
     render() {
         return (
             <div class="langPageWrapper">
-                <HomeLink color="#707070"/>
+                <HomeLink color="white" backCol="#707070"/>
                 <h1 id="synop">
                     One of my passions is learning languages.<br />These are the
                     languages that I have studied, am studying, or want to study.
