@@ -7,28 +7,27 @@ class Soft extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            bigColor: "#F5F5F5",
-            bigBackColor: "black",
-            challColor: "#646464",
-            challBackColor: "#F5F5F5"
-        }
+            bigTabClass: "bigTab isCurrent",
+            challTabClass: "challTab notActive",
+        };
     }
 
     render() {
         return (
             <div class="softPageWrapper">
-                <HomeLink color="#F5F5F5" backCol="transparent"/>
+                <span class="backgroundImg"></span>
+                <HomeLink color="#DFDFDF" backCol="transparent"/>
                 <h1 id="softSynop">
                     I am an academically trained Software Engineer.
                     <br />
                     I like to spend time every week developing larger projects,
-                    and hope to start spending a day every week developing
+                    and plan to start spending a day every week developing
                     challenge projects with a one day deadline.
                 </h1>
                 <div class="projectsWrapper">
                     <div class="tabsWrapper">
-                        <div class="bigTab" style={{color: this.state.bigColor, borderColor: this.state.bigBordColor, backgroundColor: this.state.bigBackColor}} onClick={this.renderBigProjs}>Large Projects</div>
-                        <div class="challTab" style={{color: this.state.challColor, borderColor: this.state.challBordColor, backgroundColor: this.state.challBackColor}} onClick={this.renderChallProjs}>Challenge Projects</div>
+                        <div class={this.state.bigTabClass} onClick={this.renderBigProjs}>Large Projects</div>
+                        <div class={this.state.challTabClass} onClick={this.renderChallProjs}>Challenge Projects</div>
                     </div>
                     <div id="projectList">
                         <BigList />
@@ -40,21 +39,19 @@ class Soft extends React.Component {
 
     renderBigProjs = () => {
         this.setState({
-            bigColor: "#F5F5F5",
-            bigBackColor: "black",
-            challColor: "#646464",
-            challBackColor: "#F5F5F5"
+            bigTabClass: "bigTab isCurrent",
+            challTabClass: "challTab notActive"
         });
+
         ReactDOM.render(<BigList />, document.getElementById('projectList'));
     }
 
     renderChallProjs = () => {
         this.setState({
-            bigColor: "#646464",
-            bigBackColor: "#F5F5F5",
-            challColor: "#F5F5F5",
-            challBackColor: "black"
+            bigTabClass: "bigTab notActive",
+            challTabClass: "challTab isCurrent"
         });
+
         ReactDOM.render(<ChallList />, document.getElementById('projectList'));
     }
 }
@@ -72,8 +69,8 @@ class BigList extends React.Component {
                     SoftBear
                 </div>
                 <div class="projectItemWrapper">
-                    <a href="https://github.com/DokKevin/softbear" target="_blank" rel="noopener noreferrer" class="projectItem github">GitHub</a>
-                    <a href="https://www.softbear.dev" target="_blank" rel="noopener noreferrer" class="projectItem link">Link</a>
+                    <a href="https://github.com/DokKevin/softbear" target="_blank" rel="noopener noreferrer" class="projectItem github activeLink">GitHub</a>
+                    <a href="https://www.softbear.dev" target="_blank" rel="noopener noreferrer" class="projectItem link activeLink">Link</a>
                     <div class="projectItem status inProgress">In Progress</div>
                     <div class="projectItem desc">Website for introducing myself and my projects. Developed with ReactJS.</div>
                 </div>
