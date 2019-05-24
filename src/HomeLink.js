@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './HomeLink.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class HomeLink extends React.Component {
     constructor(props) {
@@ -14,10 +15,10 @@ class HomeLink extends React.Component {
 
     render() {
         return (
-            <div class="HLWrap" style={{backgroundColor: this.props.backCol}}>
-                <div id="home" href="https://www.softbear.dev" style={{color: this.props.color}} onClick={this.renderHome}>
+            <div class="HLWrap">
+                <Link id="home" style={{color: this.props.color, backgroundColor: this.props.backCol}} to="/">
                     SoftBear
-                </div>
+                </Link>
             </div>
         )
     }

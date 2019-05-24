@@ -1,17 +1,16 @@
-.HLWrap{
+#home{
     display: block;
     font-weight: bold;
     font-size: 3vmin;
-    position: absolute;
-    top: 0vh;
-    left: 2vw;
+    position: fixed;
+    top: -1vmin;
+    left: 3vw;
     background-color: white;
-    padding-left: 2vmin;
-    padding-right: 2vmin;
+    padding: 5vmin 2vmin;
     line-height: normal;
 }
 
 #home:hover{
-    text-decoration: underline;
     cursor: pointer;
+    top: 0;
 }
