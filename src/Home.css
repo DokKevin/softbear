@@ -12,14 +12,12 @@ a {
   width: calc(100vw - 3vmin);
   margin: 1vmin;
   border: .50vmin solid #be315b;
-  /* border: .25vmin solid #be315b; */
   padding: 0;
 }
 
 #intro {
     color: #be315b;
     background-color: white;
-    /* border: .25vmin solid #be315b; */
     float: left;
     width: calc((100vw - 3vmin) / 2);
     margin: 0;
