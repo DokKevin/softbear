@@ -123,11 +123,11 @@
     justify-content: center;
     align-items: center;
     float: right;
+    color: #DFDFDF;
 }
 
 a.projectItem {
     text-decoration: none;
-    color: #DFDFDF;
 }
 
 .github {
@@ -140,6 +140,7 @@ a.projectItem {
     border: solid #DFDFDF;
     width: calc((100% / 3) - .25vmin);
     border-width: .25vmin .25vmin .25vmin 0;
+    cursor: pointer;
 }
 
 .activeLink:hover{
@@ -154,6 +155,8 @@ a.projectItem {
 }
 
 .desc {
+    max-width: 100%;
+    min-width: calc(100% - .25vmin);
     width: calc(100% - .25vmin);
     color: #DFDFDF;
     border: solid #DFDFDF;
@@ -173,4 +176,20 @@ a.projectItem {
 .projBuffer {
     font-size: 1vh;
     visibility: hidden;
+}
+
+#gameContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.gameInactive {
+    z-index: -999;
+}
+
+.gameActive {
+    z-index: 999;
 }

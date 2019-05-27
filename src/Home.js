@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Home.css';
 import HomeLink from './HomeLink.js';
-import Langs from './Langs.js';
-import Soft from './Soft.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Home extends React.Component {
