@@ -26,10 +26,6 @@ class Soft extends React.Component {
                     challenge projects with a one day deadline.
                 </h1>
                 <div className="projectsWrapper">
-                    <div className="tabsWrapper">
-                        <div className={this.state.bigTabClass} onClick={this.renderBigProjs}>Large Projects</div>
-                        <div className={this.state.challTabClass} onClick={this.renderChallProjs}>Challenge Projects</div>
-                    </div>
                     <div id="projectList">
                         <BigList />
                     </div>
@@ -46,21 +42,17 @@ class Soft extends React.Component {
 
         ReactDOM.render(<BigList />, document.getElementById('projectList'));
     }
-
-    renderChallProjs = () => {
-        this.setState({
-            bigTabClass: "bigTab notActive",
-            challTabClass: "challTab isCurrent"
-        });
-
-        ReactDOM.render(<ChallList />, document.getElementById('projectList'));
-    }
 }
 
 class BigList extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            name: this.props.name,
+            status: this.props.status,
+            github: this.props.github,
+            gameContName: "gameInactive"
+        }
     }
 
     render(){
@@ -76,35 +68,14 @@ class BigList extends React.Component {
                     <div className="projectItem desc">Website for introducing myself and my projects. Developed with ReactJS.</div>
                 </div>
                 <div className="projBuffer">Buff</div>
-            </div>
-        );
-    }
-}
-
-class ChallList extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: this.props.name,
-            status: this.props.status,
-            github: this.props.github,
-            gameContName: "gameInactive"
-        }
-    }
-
-    render(){
-        return (
-            <div className="listWrapper">
-                <div className="listItemWrapper">
-                    <div className="projectName">
-                        SoftSnake
-                    </div>
-                    <div className="projectItemWrapper">
-                        <a href="https://github.com/DokKevin/SoftSnake" target="_blank" rel="noopener noreferrer" className="projectItem github activeLink">GitHub</a>
-                        <div className="projectItem link activeLink" onClick={this.renderSnake}>Play</div>
-                        <div className="projectItem status inProgress">~5 Hours</div>
-                        <div className="projectItem desc">The challenge was to recreate snake. Due to time restrictions, the tail does not grow.</div>
-                    </div>
+                <div className="projectName">
+                    SoftSnake
+                </div>
+                <div className="projectItemWrapper">
+                    <a href="https://github.com/DokKevin/SoftSnake" target="_blank" rel="noopener noreferrer" className="projectItem github activeLink">GitHub</a>
+                    <div className="projectItem link activeLink" onClick={this.renderSnake}>Play</div>
+                    <div className="projectItem status inProgress">In Progress</div>
+                    <div className="projectItem desc">The challenge was to recreate snake.</div>
                 </div>
                 <div id="gameContainer" className={this.state.gameContName}></div>
                 <div className="projBuffer">Buff</div>
