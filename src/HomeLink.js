@@ -15,7 +15,7 @@ class HomeLink extends React.Component {
 
     render() {
         return (
-            <div class="HLWrap">
+            <div className="HLWrap">
                 <Link id="home" style={{color: this.props.color, backgroundColor: this.props.backCol}} to="/">
                     SoftBear
                 </Link>

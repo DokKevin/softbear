@@ -33,22 +33,9 @@ class Langs extends React.Component {
                             <div class="notPassed jlpt">N1</div>
                             <div class="notPassed jlpt">N2</div>
                             <div class="notPassed jlpt">N3</div>
-                            <div class="notPassed jlpt">N4</div>
-                            <div class="notPassed jlpt">N5</div>
+                            <div class="passed jlpt">N4</div>
+                            <div class="passed jlpt">N5</div>
                             <div class="passed jlpt">Studying</div>
-                        </div>
-                    </div>
-
-                    <div class="langWrapper">
-                        <div class="langName">Mandarin</div>
-                        <div class="examWrapper">
-                            <div class="notPassed hsk">HSK6</div>
-                            <div class="notPassed hsk">HSK5</div>
-                            <div class="notPassed hsk">HSK4</div>
-                            <div class="notPassed hsk">HSK3</div>
-                            <div class="notPassed hsk">HSK2</div>
-                            <div class="notPassed hsk">HSK1</div>
-                            <div class="notPassed notStudying hsk">Studying</div>
                         </div>
                     </div>
 
@@ -62,6 +49,19 @@ class Langs extends React.Component {
                             <div class="notPassed gz">A2</div>
                             <div class="notPassed gz">A1</div>
                             <div class="notPassed notStudying gz">Studying</div>
+                        </div>
+                    </div>
+
+                    <div class="langWrapper">
+                        <div class="langName">Mandarin</div>
+                        <div class="examWrapper">
+                            <div class="notPassed hsk">HSK6</div>
+                            <div class="notPassed hsk">HSK5</div>
+                            <div class="notPassed hsk">HSK4</div>
+                            <div class="notPassed hsk">HSK3</div>
+                            <div class="notPassed hsk">HSK2</div>
+                            <div class="notPassed hsk">HSK1</div>
+                            <div class="notPassed notStudying hsk">Studying</div>
                         </div>
                     </div>
                 </div>

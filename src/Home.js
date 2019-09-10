@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Home.css';
 import HomeLink from './HomeLink.js';
-import Langs from './Langs.js';
-import Soft from './Soft.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Home extends React.Component {
@@ -23,18 +20,18 @@ class Home extends React.Component {
                 <header className="App-header">
                     <HomeLink color="white" backCol="#be315b"/>
                     <div id="intro">
-                      <div class="buffer">Buffer</div>
+                      <div className="buffer">Buffer</div>
                       <h1>Hello there...</h1>
-                      <div class="buffer">Buffer</div>
+                      <div className="buffer">Buffer</div>
                       <h2>My name is Kevin.</h2>
-                      <div class="buffer">Buffer</div>
+                      <div className="buffer">Buffer</div>
                       <h3>I do these things:</h3>
                     </div>
-                    <div class="homeLinkWrapper">
-                        <Link class="homeLink" to="/langs/">Learn Languages</Link>
+                    <div className="homeLinkWrapper">
+                        <Link className="homeLink" to="/langs/">Learn Languages</Link>
                     </div>
-                    <div class="homeLinkWrapper">
-                        <Link class="homeLink" to="/soft/">Develop Software</Link>
+                    <div className="homeLinkWrapper">
+                        <Link className="homeLink" to="/soft/">Develop Software</Link>
                     </div>
                 </header>
               </div>

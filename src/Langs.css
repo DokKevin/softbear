@@ -52,6 +52,10 @@
     margin-right: 10vmin;
 }
 
+#tableWrapper:hover {
+    cursor: default;
+}
+
 .langWrapper {
     text-align: center;
     width: 100%;
