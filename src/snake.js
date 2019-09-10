@@ -216,7 +216,7 @@ class Snake extends React.Component {
                 this.toggleGame();
                 break;
             case 37:
-                if(this.state.player.direction != "east"){
+                if(this.state.player.direction !== "east"){
                     this.setState({
                         player: {
                             top: this.state.player.top,
@@ -228,7 +228,7 @@ class Snake extends React.Component {
                 } // else do nothing
                 break;
             case 38:
-                if(this.state.player.direction != "south"){
+                if(this.state.player.direction !== "south"){
                     this.setState({
                         player: {
                             top: this.state.player.top,
@@ -240,7 +240,7 @@ class Snake extends React.Component {
                 } // else do nothing
                 break;
             case 39:
-                if(this.state.player.direction != "west"){
+                if(this.state.player.direction !== "west"){
                     this.setState({
                         player: {
                             top: this.state.player.top,
@@ -252,7 +252,7 @@ class Snake extends React.Component {
                 } // else do nothing
                 break;
             case 40:
-                if(this.state.player.direction != "north"){
+                if(this.state.player.direction !== "north"){
                     this.setState({
                         player: {
                             top: this.state.player.top,
