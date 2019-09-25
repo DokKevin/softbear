@@ -272,6 +272,8 @@ class Snake extends React.Component {
             case 82:
                 this.resetGame();
                 break;
+            default:
+                break;
         }
     }
 
