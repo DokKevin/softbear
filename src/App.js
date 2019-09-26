@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Home from './Home.js';
+import Home from './Home/Home.js';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Langs from './Langs.js';
 import Soft from './Soft.js';

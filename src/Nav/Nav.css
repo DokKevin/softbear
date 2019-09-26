@@ -13,6 +13,10 @@
     --listTransitionSpeed: 1.25s;
 }
 
+a {
+    text-decoration: none;
+}
+
 .listContainer{
     background-color: rgb(0,0,0,0.9);
 
@@ -65,6 +69,8 @@
     overflow: hidden;
 
     z-index: 500;
+
+    border: .05vw solid var(--arrowCol);
 
     /* To set to center */
     /* top: calc(50vh - (var(--outlineHeight) / 2));

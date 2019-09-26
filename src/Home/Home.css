@@ -1,10 +1,11 @@
-.App {
-  text-align: center;
-  font-weight: bold;
+.App{
+    margin: 0px;
+    padding: 0px;
 }
 
-a {
-    text-decoration: none;
+/* .App {
+  text-align: center;
+  font-weight: bold;
 }
 
 .App-header {
@@ -58,7 +59,6 @@ a {
 }
 
 .homeLinkWrapper {
-    /* border: .25vmin solid #be315b; */
     float: right;
     width: calc((100vw - 3vmin) / 2);
     display: inline-block;
@@ -125,3 +125,27 @@ a {
         width: 100%;
     }
 }
+
+this.state = {
+    bigColor: "#F5F5F5",
+    bigBackColor: "#37C0FF",
+    challColor: "#909090",
+    challBackColor: "#F5F5F5"
+}
+
+<header className="App-header">
+    <div id="intro">
+      <div className="buffer">Buffer</div>
+      <h1>Hello there...</h1>
+      <div className="buffer">Buffer</div>
+      <h2>My name is Kevin.</h2>
+      <div className="buffer">Buffer</div>
+      <h3>I do these things:</h3>
+    </div>
+    <div className="homeLinkWrapper">
+        <Link className="homeLink" to="/langs/">Learn Languages</Link>
+    </div>
+    <div className="homeLinkWrapper">
+        <Link className="homeLink" to="/soft/">Develop Software</Link>
+    </div>
+</header> */
