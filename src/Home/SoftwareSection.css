@@ -1,0 +1,140 @@
+:root{
+    --accentCol: #B1F7A6;
+    --backCol: #202020;
+    --softFontCol: #DCDCDC;
+}
+
+.softwareSectionWrapper{
+    background-color: #202020;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.picWrapper a{
+    height: 39vh;
+    width: 29vh;
+
+    border: .05vw solid var(--softFontCol);
+    border-radius: 20px;
+
+    display: inline-block;
+
+    box-shadow: 1vw 1vw 50px black;
+}
+
+.websitePic{
+    background-image: url("../images/website.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    position: relative;
+    top: -8vh;
+    right: -5vw;
+
+    z-index: 249;
+
+    transition: top .75s;
+}
+
+.websitePic:hover{
+    top: -10vh;
+
+    z-index: 251;
+}
+
+.codePic{
+    background-image: url("../images/code.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    top: 7vh;
+
+    z-index: 250;
+
+    transition: top .75s;
+}
+
+.codePic:hover{
+    top: 5vh;
+
+    z-index: 251;
+}
+
+.gitPic{
+    background-image: url("../images/github.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    top: -8vh;
+    left: -5vw;
+
+    z-index: 249;
+
+    transition: top .75s;
+}
+
+.gitPic:hover{
+    top: -10vh;
+
+    z-index: 251;
+}
+
+.softTitle{
+    color: var(--softFontCol);
+    font-size: 2vw;
+
+    position: relative;
+    top: -7.5vh;
+
+    text-align: center;
+
+    margin-bottom: 7.5vh;
+}
+
+.softTitle p{
+    margin: 0;
+    padding: 0;
+}
+
+.softAccent{
+    color: var(--accentCol);
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.projectButt{
+    position: relative;
+    top: 12.5vh;
+
+    border: .4vh solid var(--accentCol);
+    border-radius: 20px;
+
+    color: var(--accentCol);
+    font-size: 3vh;
+    font-weight: bold;
+
+    padding: 1vh 3vh;
+
+    text-decoration: none;
+
+    transition: all .75s;
+}
+
+.projectButt:visited{
+    text-decoration: none;
+}
+
+.projectButt:hover{
+    background-color: var(--accentCol);
+    color: var(--backCol);
+}

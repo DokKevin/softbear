@@ -30,7 +30,7 @@ class Nav extends React.Component {
                     </div>
                 </div>
 
-                <div className={this.state.linkListClass}>
+                <div className={this.state.linkListClass} onClick={this.toggleNav}>
                     <div className="linkWrapper">
                         <Link className="navLink" to="/" onClick={this.toggleNav}>Home</Link>
                         <Link className="navLink" to="/langs/" onClick={this.toggleNav}>Languages</Link>
