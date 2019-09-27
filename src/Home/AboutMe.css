@@ -6,6 +6,8 @@
 .aboutWrapper{
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 .aboutWrapper div{
@@ -19,14 +21,11 @@
     background-image: url("../images/intro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    float: left;
 }
 
 .aboutContWrapper{
     background-color: var(--backCol);
     color: #DCDCDC;
-
-    float: right;
 
     text-align: right;
 
@@ -34,6 +33,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    height: 100vh;
 }
 
 .aboutContent{
