@@ -1,0 +1,140 @@
+:root{
+    --langBackCol: #DCDCDC;
+    --langAccCol: #75BBFF;
+    --langFontCol: #202020;
+    --tableLightGrey: #808080;
+}
+
+.langSectionWrapper{
+    background-color: var(--langBackCol);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.langBlurb{
+    width: 100vw;
+    text-align: center;
+
+    color: var(--langFontCol);
+
+    font-weight: bold;
+    font-size: 2vw;
+
+    padding: 10vh 0 7.5vh 0;
+}
+
+.langAccented{
+    color: var(--langAccCol);
+    font-size: 3vw;
+}
+
+#tableWrapper {
+    padding: 10vmin 10vmin 10vmin 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tableWrapper:hover {
+    cursor: default;
+}
+
+.langWrapper {
+    text-align: center;
+    width: 100%;
+    color: var(--tableLightGrey);
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 1vmin;
+}
+
+.langName {
+    padding: 2.5vmin;
+    display: inline-block;
+    width: 15%;
+    background-color: var(--langFontCol);
+    border: .50vmin solid var(--langFontCol);
+    color: var(--langBackCol);
+}
+
+.examWrapper {
+    display: inline-block;
+    width: 75%;
+}
+
+#firstLang {
+    width: 100%;
+}
+
+.passed {
+    padding-top: 2.5vmin;
+    padding-bottom: 2.5vmin;
+    background-color: var(--langAccCol);
+    border-top: .50vmin solid var(--langAccCol);
+    border-bottom: .50vmin solid var(--langAccCol);
+    display: inline-block;
+    color: var(--langFontCol);
+}
+
+.passed:hover{
+    color: var(--langBackCol);
+}
+
+.notPassed {
+    padding-top: 2.5vmin;
+    padding-bottom: 2.5vmin;
+    border-top: .50vmin solid var(--tableLightGrey);
+    border-bottom: .50vmin solid var(--tableLightGrey);
+    height: 100%;
+    display: inline-block;
+}
+
+.notPassed:hover {
+    background-color: var(--tableLightGrey);
+    color: var(--langFontCol);
+}
+
+.notStudying {
+    border-right: .50vmin solid var(--tableLightGrey);
+}
+
+.jlpt {
+    width: calc(100% / 6);
+}
+
+.hsk {
+    width: calc(100% / 7);
+}
+
+.gz {
+    width: calc(100% / 7);
+}
+
+.notStudying.jlpt {
+    width: calc((100% / 6) - .5vmin)
+}
+
+.notStudying.hsk {
+    width: calc((100% / 7) - .5vmin);
+}
+
+.notStudying.gz {
+    width: calc((100% / 7) - .5vmin);
+}
+
+.tableBlurb{
+    color: var(--langFontCol);
+    font-size: 1vw;
+    font-weight: bold;
+    float: left;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 28vh;
+    right: -5vw;
+}
+
+.tableBlurb span{
+    color: var(--langAccCol);
+    font-size: 1.5vw;
+}

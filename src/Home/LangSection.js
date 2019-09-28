@@ -1,22 +1,22 @@
 import React from 'react';
-import HomeLink from './HomeLink.js';
-import './Langs.css';
+import './LangSection.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-class Langs extends React.Component {
+class LangSection extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {};
     }
 
-    render() {
+    render(){
         return (
-            <div className="langPageWrapper">
-                <span className="langBackImg"></span>
-                <HomeLink color="#9F9F9F" backCol="transparent"/>
-                <h1 id="synop">
-                    One of my passions is learning languages.<br />These are the
-                    languages that I have studied, am studying, or want to study.
-                </h1>
+            <div className="langSectionWrapper" id="langTop">
+                <div className="langBlurb">
+                    I think learning<span className="langAccented"> languages </span>is super cool.
+                </div>
+
+                <div className="tableBlurb">What am I<span> learning?</span></div>
+                
                 <div id="tableWrapper">
                     <div className="langWrapper">
                         <div className="langName">English</div>
@@ -66,8 +66,8 @@ class Langs extends React.Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default Langs;
+export default LangSection;

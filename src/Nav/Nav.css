@@ -42,7 +42,7 @@ a {
 .navLink{
     color: var(--fontCol);
     font-size: 3vw;
-    margin: 2vw;
+    margin-top: .5vw;
     padding: 0;
     transition: font-size .75s;
 }
@@ -54,6 +54,24 @@ a {
 
 .navLink:hover {
     font-size: 4vw;
+}
+
+.subLink{
+    color: var(--fontCol);
+    font-size: 1.5vw;
+    transition: font-size .75s;
+
+    position: relative;
+    left: 1vw;
+}
+
+.subLink:visited{
+    color: var(--fontCol);
+    text-decoration: none;
+}
+
+.subLink:hover{
+    font-size: 2vw;
 }
 
 .buttonOutline{
@@ -157,7 +175,7 @@ a {
 .listContainer div{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     min-height: 100vh;
@@ -165,20 +183,15 @@ a {
 
 .linkWrapper{
     float: left;
-
     position: relative;
     left: 45vw;
-
-    width: 10vw;
-
+    width: 20vw;
     z-index: 996;
 }
 
 .socialMediaWrapper{
     float: right;
-
     width: 10vw;
-
     z-index: 997;
 }
 

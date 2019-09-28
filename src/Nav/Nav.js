@@ -32,9 +32,11 @@ class Nav extends React.Component {
 
                 <div className={this.state.linkListClass} onClick={this.toggleNav}>
                     <div className="linkWrapper">
-                        <Link className="navLink" to="/" onClick={this.toggleNav}>Home</Link>
-                        <Link className="navLink" to="/langs/" onClick={this.toggleNav}>Languages</Link>
-                        <Link className="navLink" to="/soft/" onClick={this.toggleNav}>Software</Link>
+                        <Link className="navLink" to="/" onClick={this.toTop}>Home</Link>
+                        <Link className="navLink" onClick={this.toAbout}>About Me</Link>
+                        <Link className="navLink" onClick={this.toSoft}>Software</Link>
+                        <Link className="subLink" to="/soft/" onClick={this.toggleNav}> - Projects</Link>
+                        <Link className="navLink" onClick={this.toLangs}>Languages</Link>
                     </div>
                     <div className="socialMediaWrapper">
                         <a className="socialLink instagram" href="https://www.instagram.com/barbearic_duck/" target="_blank" rel="noopener noreferrer">
@@ -51,6 +53,34 @@ class Nav extends React.Component {
             </div>
         )
     }
+
+    toTop = () => {
+        let element = document.getElementById("top");
+        element.scrollIntoView({behavior: "smooth", block: "start"});
+
+        this.toggleNav();
+    };
+
+    toLangs = () => {
+        let element = document.getElementById("langTop");
+        element.scrollIntoView({behavior: "smooth", block: "start"});
+
+        this.toggleNav();
+    };
+
+    toSoft = () => {
+        let element = document.getElementById("softTop");
+        element.scrollIntoView({behavior: "smooth", block: "start"});
+
+        this.toggleNav();
+    };
+
+    toAbout = () => {
+        let element = document.getElementById("aboutTop");
+        element.scrollIntoView({behavior: "smooth", block: "start"});
+
+        this.toggleNav();
+    };
 
     toggleNav = () => {
         if(this.state.atTop === 0){

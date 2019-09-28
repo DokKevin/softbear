@@ -11,7 +11,7 @@ class AboutMe extends React.Component {
 
     render(){
         return (
-            <div className="aboutWrapper">
+            <div className="aboutWrapper" id="top">
                 <div className="aboutPic"></div>
                 <div className="aboutContWrapper">
                     <span className="aboutContent">

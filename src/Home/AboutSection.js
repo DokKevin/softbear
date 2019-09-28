@@ -12,15 +12,15 @@ class AboutSection extends React.Component {
 
     render(){
         return (
-            <div className="sectionWrapper">
+            <div className="sectionWrapper" id="aboutTop">
                 <div className="sectionContentWrapper">
                     <div className="blurb">
                         <h1>Who am<span className="aboutAccent"> I?</span></h1>
                         <p>
-                            I am a software engineer living in Kyoto, Japan. I
+                            I am a software engineer living in <span className="accented">Kyoto</span>, Japan. I
                             like to eat, play, and work, but not at the same
-                            time. I like to do things like program, learn
-                            foreign languages, and play Magic: The Gathering in
+                            time. I like to do things like <span className="accented">program</span>, learn
+                            foreign <span className="accented">languages</span>, and play <span className="accented">Magic: The Gathering</span> in
                             my free time. Scroll down to see more details about
                             what I get up to.
                         </p>
