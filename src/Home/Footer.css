@@ -1,0 +1,31 @@
+:root{
+    --lightCol: #DCDCDC;
+    --darkCol: #202020;
+    --blueAccent: #75BBFF;
+    --greenAccent: #B1F7A6;
+}
+
+.footerWrapper{
+    height: 25vh;
+    width: 100vw;
+
+    background-color: var(--darkCol);
+    color: var(--lightCol);
+
+    /* background-color: var(--lightCol); */
+    /* color: var(--darkCol); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerWrapper div{
+    color: var(--lightCol);
+    font-size: 1vw;
+}
+
+.footerWrapper div span{
+    font-size: 1.5vw;
+    color: var(--greenAccent);
+}

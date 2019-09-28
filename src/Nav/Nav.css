@@ -1,0 +1,211 @@
+:root{
+    --fontCol: #DCDCDC;
+
+    --bColor: #202020;
+    --arrowCol: #DCDCDC;
+
+    --outlineHeight: 6vw;
+    --outlineWidth: 6vw;
+
+    --rectHeight: calc(var(--outlineHeight) * .30);
+    --rectWidth: calc(var(--outlineWidth) * .30);
+
+    --listTransitionSpeed: 1.25s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.listContainer{
+    background-color: rgb(0,0,0,0.9);
+
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 499;
+
+    position: fixed;
+    left: 0;
+}
+
+.listAtTop{
+    top: -100vh;
+    transition: top var(--listTransitionSpeed);
+}
+
+.listAtBottom{
+    top: 0;
+    transition: top var(--listTransitionSpeed);
+}
+
+.navLink{
+    color: var(--fontCol);
+    font-size: 3vw;
+    margin-top: .5vw;
+    padding: 0;
+    transition: font-size .75s;
+}
+
+.navLink:visited {
+    color: var(--fontCol);
+    text-decoration: none;
+}
+
+.navLink:hover {
+    font-size: 4vw;
+}
+
+.subLink{
+    color: var(--fontCol);
+    font-size: 1.5vw;
+    transition: font-size .75s;
+
+    position: relative;
+    left: 1vw;
+}
+
+.subLink:visited{
+    color: var(--fontCol);
+    text-decoration: none;
+}
+
+.subLink:hover{
+    font-size: 2vw;
+}
+
+.buttonOutline{
+    height: var(--outlineHeight);
+    width: var(--outlineWidth);
+    border-radius: 50%;
+
+    position: fixed;
+    left: calc(50vw - (var(--outlineWidth) / 2));
+
+    background-color: var(--bColor);
+
+    overflow: hidden;
+
+    z-index: 500;
+
+    border: .05vw solid var(--arrowCol);
+
+    /* To set to center */
+    /* top: calc(50vh - (var(--outlineHeight) / 2));
+    left: calc(50vw - (var(--outlineWidth) / 2)); */
+
+    /* To set to bottom */
+    /* left: calc(50vw - (var(--outlineWidth) / 2));
+    bottom: calc(var(--outlineHeight) / -2); */
+}
+
+.arrowAtTop{
+    top: calc(var(--outlineHeight) / -2);
+    transition: top var(--listTransitionSpeed);
+}
+
+.arrowAtBottom{
+    top: calc(100vh - (var(--outlineHeight) / 2));
+    transition: top var(--listTransitionSpeed);
+}
+
+.buttonOutline:hover{
+    --rectHeight: calc(var(--outlineHeight) * .35);
+    --rectWidth: calc(var(--outlineWidth) * .35);
+
+    cursor: pointer;
+}
+
+.upArrowOutter{
+    background-color: var(--arrowCol);
+
+    height: var(--rectHeight);
+    width: var(--rectWidth);
+
+    position: absolute;
+    left: calc(50% - (var(--rectWidth) / 2));
+    top: calc((var(--outlineHeight) * .2));
+
+    transform: rotate(45deg);
+
+    transition: all .75s;
+}
+
+.upArrowInner{
+    background-color: var(--bColor);
+
+    height: var(--rectHeight);
+    width: var(--rectWidth);
+
+    position: relative;
+    top: calc((var(--rectHeight) * .25));
+    left: calc((var(--rectHeight) * .25));
+
+    transition: all .75s;
+}
+
+.downArrowOutter{
+    background-color: var(--arrowCol);
+
+    height: var(--rectHeight);
+    width: var(--rectWidth);
+
+    position: absolute;
+    left: calc(50% - (var(--rectWidth) / 2));
+    bottom: calc((var(--outlineHeight) * .2));
+
+    transform: rotate(45deg);
+
+    transition: all .75s;
+}
+
+.downArrowInner{
+    background-color: var(--bColor);
+
+    height: var(--rectHeight);
+    width: var(--rectWidth);
+
+    position: relative;
+    top: calc(-1 * (var(--rectHeight) * .25));
+    left: calc(-1 * (var(--rectHeight) * .25));
+
+    transition: all .75s;
+}
+
+.listContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.linkWrapper{
+    float: left;
+    position: relative;
+    left: 45vw;
+    width: 20vw;
+    z-index: 996;
+}
+
+.socialMediaWrapper{
+    float: right;
+    width: 10vw;
+    z-index: 997;
+}
+
+.socialLink img{
+    height: 4vw;
+    margin: 1vw;
+    padding: 0;
+    transition: height .75s;
+}
+
+.socialLink img:hover{
+    height: 5vw;
+}
+
+.email:hover{
+    cursor: not-allowed;
+}
