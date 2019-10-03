@@ -1,0 +1,48 @@
+:root{
+    --lightCol: #DCDCDC;
+    --darkCol: #202020;
+    --blueAccent: #75BBFF;
+    --greenAccent: #B1F7A6;
+}
+
+.softPageWrapper{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--darkCol);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projsBlurb{
+    color: var(--lightCol);
+    width: 75vw;
+    font-size: 2.5vw;
+    text-align: left;
+}
+
+.projsBlurb span{
+    border-bottom: .5vw solid var(--greenAccent);
+}
+
+.projAccented{
+    color: var(--greenAccent);
+    font-weight: bold;
+}
+
+#gameContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.gameInactive {
+    z-index: -999;
+}
+
+.gameActive {
+    z-index: 999;
+}
