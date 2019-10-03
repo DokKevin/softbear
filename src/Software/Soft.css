@@ -1,40 +1,3 @@
-.backgroundImg {
-    background-image: url(./bearFace.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    max-height: 100vh;
-    min-height: 100vh;
-    width: 100vw;
-    max-width: 100vw;
-    min-width: 100vw;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
-}
-
-.backgroundImg:before {
-    content: " ";
-    background: inherit;
-    height: 102vh;
-    max-height: 102vh;
-    min-height: 102vh;
-    width: 102vw;
-    max-width: 102vw;
-    min-width: 102vw;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: -1vh;
-    left: -1vw;
-    z-index: -1;
-    box-shadow: inset 0 0 0 3000px rgba(0,0,0,.665);
-    filter: blur(10px);
-}
-
 #softSynop {
     color: #F5F5F5;
     margin: 0 10vw;
@@ -54,46 +17,11 @@
     align-items: center;
 }
 
-.tabsWrapper {
-    width: 100%;
-    text-align: center;
-    font-size: 2.5vmin;
-    margin-bottom: 4vmin;
-    font-weight: bold;
-}
-
-.tabsWrapper div {
-    border: .25vmin solid #DFDFDF;
-    width: calc(50% - .5vmin);
-    display: inline-block;
-    padding: 2.5vmin 0;
-    cursor: pointer;
-}
-
-.isCurrent {
-    background-color: #DFDFDF;
-    color: #202020;
-}
-
-.notActive {
-    color: #DFDFDF;
-}
-
-.notActive:hover {
-    color: #202020;
-    background-color: #DFDFDF;
-}
-
 #projectList {
     width: 100%;
     text-align: center;
     font-size: 2.5vmin;
     margin-bottom: 2vmin;
-}
-
-.listItemWrapper{
-    display: block;
-    margin: 0;
 }
 
 .projectName {
@@ -166,11 +94,6 @@ a.projectItem {
 .inProgress {
     border-color: #DFDF00;
     color: #DFDF00;
-}
-
-.none {
-    border-color: #DF0000;
-    color: #DF0000;
 }
 
 .projBuffer {
