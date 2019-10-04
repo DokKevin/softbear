@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './Home/Home.js';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Soft from './Soft.js';
+import Soft from './Software/SoftT2.js';
 import Nav from './Nav/Nav.js';
 
 function App() {
