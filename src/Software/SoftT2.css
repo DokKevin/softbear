@@ -1,5 +1,6 @@
 :root{
     --lightCol: #DCDCDC;
+    --mediumCol: #373737;
     --darkCol: #202020;
     --blueAccent: #75BBFF;
     --greenAccent: #B1F7A6;
@@ -18,17 +19,93 @@
 .projsBlurb{
     color: var(--lightCol);
     width: 75vw;
-    font-size: 2.5vw;
+    font-size: 3em;
     text-align: left;
+    margin: 10vh 0 18vh 0;
 }
 
 .projsBlurb span{
-    border-bottom: .5vw solid var(--greenAccent);
+    border-bottom: .35em solid var(--greenAccent);
 }
 
 .projAccented{
     color: var(--greenAccent);
     font-weight: bold;
+}
+
+.projectsWrapper{
+    text-align: center;
+}
+
+.projItemWrapper{
+    display: inline-block;
+    color: var(--lightCol);
+    padding: 4vh 4vw;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all .75s;
+}
+
+.projImg{
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+}
+
+.projName{
+    font-size: 3em;
+    padding: 2vh;
+}
+
+.bufferLine{
+    border: 2px solid var(--mediumCol);
+    width: 35%;
+}
+
+.projDescription{
+    font-size: 1.3em;
+    width: 350px;
+    margin: 3vh 0;
+}
+
+.projLinksWrapper{
+    width: 100%;
+}
+
+.plwColumn{
+    display: inline-block;
+    width: 50%;
+}
+
+.plwColumn a{
+    display: block;
+    padding-bottom: 1vh;
+}
+
+.plwColumn a:visited{
+    color: var(--lightCol);
+}
+
+.plwColumn a:hover{
+    color: var(--greenAccent);
+}
+
+.plwColumn div{
+    padding-bottom: 1vh;
+}
+
+.inProgress{
+    color: yellow;
+}
+
+.finished{
+    color: var(--greenAccent);
+}
+
+.projItemButton:hover{
+    color: var(--greenAccent);
+    cursor: pointer;
 }
 
 #gameContainer {
