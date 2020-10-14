@@ -32,7 +32,7 @@ class LangSection extends React.Component {
                         <div className="examWrapper">
                             <div className="notPassed jlpt">N1</div>
                             <div className="notPassed jlpt">N2</div>
-                            <div className="notPassed jlpt">N3</div>
+                            <div className="passed jlpt">N3</div>
                             <div className="passed jlpt">N4</div>
                             <div className="passed jlpt">N5</div>
                             <div className="passed jlpt">Studying</div>

@@ -46,7 +46,7 @@ class Nav extends React.Component {
                         </div>
                     </div>
                     <div className="socialMediaWrapper">
-                        <a className="socialLink instagram" href="https://www.instagram.com/barbearic_duck/" target="_blank" rel="noopener noreferrer">
+                        <a className="socialLink instagram" href="https://www.instagram.com/anchovy_pizza/" target="_blank" rel="noopener noreferrer">
                             <img src={InstagramLogo} alt="Instagram" />
                         </a>
                         <a className="socialLink linkedIn" href="https://www.linkedin.com/in/kevin-kauffman-9a7bb3149/" target="_blank" rel="noopener noreferrer">
