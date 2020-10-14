@@ -17,7 +17,7 @@ class AboutMe extends React.Component {
                     <span className="aboutContent">
                         <h1 className="hello">Hello.</h1>
                         <h2>My name is <span className="name">Kevin.</span></h2>
-                        <h3>And that's my <span>beautiful</span> girlfriend.</h3>
+                        <h3>And that's my <span>beautiful</span> fiancée.</h3>
                         <h3><span className="contactButton">Contact Me</span></h3>
                     </span>
                     <span className="scrollImg">
