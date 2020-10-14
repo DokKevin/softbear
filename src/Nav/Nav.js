@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import InstagramLogo from "../images/Instagram_Icon.png";
 import LinkedInLogo from "../images/linkedin_icon.png";
 import EmailLogo from "../images/email.png";
+import GitHubLogo from "../images/github-icon.png";
 
 class Nav extends React.Component {
     constructor(props) {
@@ -31,19 +32,28 @@ class Nav extends React.Component {
                 </div>
 
                 <div className={this.state.linkListClass} onClick={this.toggleNav}>
-                    <div className="linkWrapper">
-                        <Link className="navLink" to="/" onClick={this.toTop}>Home</Link>
-                        <Link className="navLink" onClick={this.toAbout}>About Me</Link>
-                        <Link className="navLink" onClick={this.toSoft}>Software</Link>
-                        <Link className="subLink" to="/soft/" onClick={this.toggleNav}> - Projects</Link>
-                        <Link className="navLink" onClick={this.toLangs}>Languages</Link>
+                    <div className="subDomainLinksWrapper">
+                        <Link className="navLink subDomLink" to="https://beta.softbear.dev" onClick={this.toggleNav}>Beta Site</Link>
+                        <Link className="navLink subDomLink" to="https://recipes.softbear.dev" onClick={this.toggleNav}>Recipe Site</Link>
+                    </div>
+                    <div className="mainLinksWrapper">
+                        <div>
+                            <Link className="navLink mainLink" to="/" onClick={this.toTop}>Home</Link>
+                            <Link className="navLink mainLink" onClick={this.toAbout}>About Me</Link>
+                            <Link className="navLink mainLink" onClick={this.toSoft}>Software</Link>
+                            <Link className="subLink" to="/soft/" onClick={this.toggleNav}> - Projects</Link>
+                            <Link className="navLink mainLink" onClick={this.toLangs}>Languages</Link>
+                        </div>
                     </div>
                     <div className="socialMediaWrapper">
-                        <a className="socialLink instagram" href="https://www.instagram.com/barbearic_duck/" target="_blank" rel="noopener noreferrer">
+                        <a className="socialLink instagram" href="https://www.instagram.com/anchovy_pizza/" target="_blank" rel="noopener noreferrer">
                             <img src={InstagramLogo} alt="Instagram" />
                         </a>
                         <a className="socialLink linkedIn" href="https://www.linkedin.com/in/kevin-kauffman-9a7bb3149/" target="_blank" rel="noopener noreferrer">
                             <img src={LinkedInLogo} alt="LinkedIn" />
+                        </a>
+                        <a className="socialLink gitHub" href="https://github.com/DokKevin" target="_blank" rel="noopener noreferrer">
+                            <img src={GitHubLogo} alt="GitHub" />
                         </a>
                         <a className="socialLink email">
                             <img src={EmailLogo} alt="Email Me" />

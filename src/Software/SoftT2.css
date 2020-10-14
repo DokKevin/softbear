@@ -81,10 +81,11 @@
 .plwColumn a{
     display: block;
     padding-bottom: 1vh;
+    color: var(--blueAccent);
 }
 
 .plwColumn a:visited{
-    color: var(--lightCol);
+    color: var(--blueAccent);
 }
 
 .plwColumn a:hover{
