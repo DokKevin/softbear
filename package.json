@@ -3,10 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "acorn": "^8.0.4",
+    "dot-prop": "^6.0.0",
+    "elliptic": "^6.5.3",
+    "handlebars": "^4.7.6",
+    "http-proxy": "^1.18.1",
+    "lodash": "^4.17.20",
+    "lodash.template": "^4.5.0",
+    "minimist": "^1.2.5",
+    "node-fetch": "^2.6.1",
+    "node-forge": "^0.10.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "serialize-javascript": "^5.0.1",
+    "websocket-extensions": "^0.1.4",
+    "yargs-parser": "^20.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
