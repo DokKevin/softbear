@@ -4,8 +4,8 @@
     --bColor: #202020;
     --arrowCol: #DCDCDC;
 
-    --outlineHeight: 6vw;
-    --outlineWidth: 6vw;
+    --outlineHeight: 4rem;
+    --outlineWidth: 4rem;
 
     --rectHeight: calc(var(--outlineHeight) * .30);
     --rectWidth: calc(var(--outlineWidth) * .30);
@@ -18,25 +18,25 @@ a {
 }
 
 .listContainer{
-    background-color: rgb(0,0,0,0.9);
-
     height: 100vh;
     width: 100vw;
 
     z-index: 499;
 
     position: fixed;
+    left: -100vw;
+    
+    transition: left var(--listTransitionSpeed);
+}
+
+.navWrapper{
+    width: 25vw;
+    background-color: rgb(0,0,0,0.9);
+}
+
+.listOpen{
     left: 0;
-}
-
-.listAtTop{
-    top: -100vh;
-    transition: top var(--listTransitionSpeed);
-}
-
-.listAtBottom{
-    top: 0;
-    transition: top var(--listTransitionSpeed);
+    transition: left var(--listTransitionSpeed);
 }
 
 .subLink:visited{
@@ -54,7 +54,8 @@ a {
     border-radius: 50%;
 
     position: fixed;
-    left: calc(50vw - (var(--outlineWidth) / 2));
+    left: 1vw;
+    top: 1vw;
 
     background-color: var(--bColor);
 
@@ -62,25 +63,12 @@ a {
 
     z-index: 500;
 
-    border: .05vw solid var(--arrowCol);
+    border: 2px solid var(--arrowCol);
 
-    /* To set to center */
-    /* top: calc(50vh - (var(--outlineHeight) / 2));
-    left: calc(50vw - (var(--outlineWidth) / 2)); */
-
-    /* To set to bottom */
-    /* left: calc(50vw - (var(--outlineWidth) / 2));
-    bottom: calc(var(--outlineHeight) / -2); */
-}
-
-.arrowAtTop{
-    top: calc(var(--outlineHeight) / -2);
-    transition: top var(--listTransitionSpeed);
-}
-
-.arrowAtBottom{
-    top: calc(100vh - (var(--outlineHeight) / 2));
-    transition: top var(--listTransitionSpeed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .buttonOutline:hover{
@@ -88,62 +76,6 @@ a {
     --rectWidth: calc(var(--outlineWidth) * .35);
 
     cursor: pointer;
-}
-
-.upArrowOutter{
-    background-color: var(--arrowCol);
-
-    height: var(--rectHeight);
-    width: var(--rectWidth);
-
-    position: absolute;
-    left: calc(50% - (var(--rectWidth) / 2));
-    top: calc((var(--outlineHeight) * .2));
-
-    transform: rotate(45deg);
-
-    transition: all .75s;
-}
-
-.upArrowInner{
-    background-color: var(--bColor);
-
-    height: var(--rectHeight);
-    width: var(--rectWidth);
-
-    position: relative;
-    top: calc((var(--rectHeight) * .25));
-    left: calc((var(--rectHeight) * .25));
-
-    transition: all .75s;
-}
-
-.downArrowOutter{
-    background-color: var(--arrowCol);
-
-    height: var(--rectHeight);
-    width: var(--rectWidth);
-
-    position: absolute;
-    left: calc(50% - (var(--rectWidth) / 2));
-    bottom: calc((var(--outlineHeight) * .2));
-
-    transform: rotate(45deg);
-
-    transition: all .75s;
-}
-
-.downArrowInner{
-    background-color: var(--bColor);
-
-    height: var(--rectHeight);
-    width: var(--rectWidth);
-
-    position: relative;
-    top: calc(-1 * (var(--rectHeight) * .25));
-    left: calc(-1 * (var(--rectHeight) * .25));
-
-    transition: all .75s;
 }
 
 .listContainer div{
@@ -233,4 +165,37 @@ a {
 
     position: relative;
     left: 1vw;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--arrowCol);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change{
+    background-color: var(--arrowCol);
+    transition: 1.25s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    background-color: var(--bColor);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    background-color: var(--bColor);
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    background-color: var(--bColor);
+    -webkit-transform: rotate(45deg) translate(-9px, -7px);
+    transform: rotate(45deg) translate(-9px, -7px);
 }

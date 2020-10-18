@@ -12,8 +12,8 @@ class Nav extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            dropArrowClass: "buttonOutline arrowAtTop",
-            linkListClass: "listContainer listAtTop",
+            dropArrowClass: "buttonOutline",
+            linkListClass: "listContainer",
             atTop: 0
         };
     }
@@ -22,42 +22,40 @@ class Nav extends React.Component {
         return (
             <div>
                 <div className={this.state.dropArrowClass} onClick={this.toggleNav}>
-                    <div className="upArrowOutter">
-                        <div className="upArrowInner"></div>
-                    </div>
-
-                    <div className="downArrowOutter">
-                        <div className="downArrowInner"></div>
-                    </div>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
 
                 <div className={this.state.linkListClass} onClick={this.toggleNav}>
-                    <div className="subDomainLinksWrapper">
-                        <Link className="navLink subDomLink" to="https://beta.softbear.dev" onClick={this.toggleNav}>Beta Site</Link>
-                        <Link className="navLink subDomLink" to="https://recipes.softbear.dev" onClick={this.toggleNav}>Recipe Site</Link>
-                    </div>
-                    <div className="mainLinksWrapper">
-                        <div>
-                            <Link className="navLink mainLink" to="/" onClick={this.toTop}>Home</Link>
-                            <Link className="navLink mainLink" onClick={this.toAbout}>About Me</Link>
-                            <Link className="navLink mainLink" onClick={this.toSoft}>Software</Link>
-                            <Link className="subLink" to="/soft/" onClick={this.toggleNav}> - Projects</Link>
-                            <Link className="navLink mainLink" onClick={this.toLangs}>Languages</Link>
+                    <div className="navWrapper">
+                        <div className="subDomainLinksWrapper">
+                            <Link className="navLink subDomLink" to="https://beta.softbear.dev" onClick={this.toggleNav}>Beta Site</Link>
+                            <Link className="navLink subDomLink" to="https://recipes.softbear.dev" onClick={this.toggleNav}>Recipe Site</Link>
                         </div>
-                    </div>
-                    <div className="socialMediaWrapper">
-                        <a className="socialLink instagram" href="https://www.instagram.com/anchovy_pizza/" target="_blank" rel="noopener noreferrer">
-                            <img src={InstagramLogo} alt="Instagram" />
-                        </a>
-                        <a className="socialLink linkedIn" href="https://www.linkedin.com/in/kevin-kauffman-9a7bb3149/" target="_blank" rel="noopener noreferrer">
-                            <img src={LinkedInLogo} alt="LinkedIn" />
-                        </a>
-                        <a className="socialLink gitHub" href="https://github.com/DokKevin" target="_blank" rel="noopener noreferrer">
-                            <img src={GitHubLogo} alt="GitHub" />
-                        </a>
-                        <a className="socialLink email">
-                            <img src={EmailLogo} alt="Email Me" />
-                        </a>
+                        <div className="mainLinksWrapper">
+                            <div>
+                                <Link className="navLink mainLink" to="/" onClick={this.toTop}>Home</Link>
+                                <Link className="navLink mainLink" onClick={this.toAbout}>About Me</Link>
+                                <Link className="navLink mainLink" onClick={this.toSoft}>Software</Link>
+                                <Link className="subLink" to="/soft/" onClick={this.toggleNav}> - Projects</Link>
+                                <Link className="navLink mainLink" onClick={this.toLangs}>Languages</Link>
+                            </div>
+                        </div>
+                        <div className="socialMediaWrapper">
+                            <a className="socialLink instagram" href="https://www.instagram.com/anchovy_pizza/" target="_blank" rel="noopener noreferrer">
+                                <img src={InstagramLogo} alt="Instagram" />
+                            </a>
+                            <a className="socialLink linkedIn" href="https://www.linkedin.com/in/kevin-kauffman-9a7bb3149/" target="_blank" rel="noopener noreferrer">
+                                <img src={LinkedInLogo} alt="LinkedIn" />
+                            </a>
+                            <a className="socialLink gitHub" href="https://github.com/DokKevin" target="_blank" rel="noopener noreferrer">
+                                <img src={GitHubLogo} alt="GitHub" />
+                            </a>
+                            <a className="socialLink email">
+                                <img src={EmailLogo} alt="Email Me" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,14 +93,14 @@ class Nav extends React.Component {
     toggleNav = () => {
         if(this.state.atTop === 0){
             this.setState({
-                dropArrowClass: "buttonOutline arrowAtBottom",
-                linkListClass: "listContainer listAtBottom",
+                dropArrowClass: "buttonOutline change",
+                linkListClass: "listContainer listOpen",
                 atTop: 1
             });
         } else {
             this.setState({
-                dropArrowClass: "buttonOutline arrowAtTop",
-                linkListClass: "listContainer listAtTop",
+                dropArrowClass: "buttonOutline",
+                linkListClass: "listContainer",
                 atTop: 0
             });
         }
