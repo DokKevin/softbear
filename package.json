@@ -8,7 +8,7 @@
     "elliptic": "^6.5.3",
     "handlebars": "^4.7.6",
     "http-proxy": "^1.18.1",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
     "minimist": "^1.2.5",
     "node-fetch": "^2.6.1",
